@@ -11,7 +11,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      data: [],
+      hits: [],
     };
         //test
   }
@@ -19,15 +19,17 @@ class App extends Component {
   componentDidMount() {
     fetch(API +DEFAULT_QUERY)
     .then(response => response.json())
-    .then(data => this.setState({ data: data.data}));
+    .then(data => this.setState({ data: data.hits}));
   }
   
   render() {
+    const { hits } = this.state;
+  
     return (
-      //component
-      <div className="App">
-          
-      </div>
+      //map through data
+      <ul>
+        
+      </ul>
     );
   }
 }

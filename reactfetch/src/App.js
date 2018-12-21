@@ -16,7 +16,11 @@ class App extends Component {
         //test
   }
 
-  
+  componentDidMount() {
+    fetch(API +DEFAULT_QUERY)
+    .then(response => response.json())
+    .then(data => this.setState({ data: data.data}));
+  }
   
   render() {
     return (

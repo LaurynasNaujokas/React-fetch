@@ -2,14 +2,21 @@ import React, { Component } from 'react';
 import './App.css';
 
 
+const API = '';
+const DEFAULT_QUERY = 'redux';
 
 
+class App extends Component {
+  constructor(props){
+    super(props);
 
-export default class App extends Component {
-
-  componentDidMount(){
-    //fetch 
+    this.state = {
+      data: [],
+    };
+        //test
   }
+
+  
   
   render() {
     return (
@@ -22,3 +29,4 @@ export default class App extends Component {
 }
 
 
+export default App;

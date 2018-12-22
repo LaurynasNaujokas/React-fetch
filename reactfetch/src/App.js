@@ -26,7 +26,9 @@ class App extends Component {
     const { hits } = this.state;
   
     return (
+    
       <ul>
+        <h1>List</h1>
         {hits.map(hit =>
           <li key={hit.objectID}>
             <a href={hit.url}>{hit.title}

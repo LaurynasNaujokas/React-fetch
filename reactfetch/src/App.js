@@ -29,7 +29,10 @@ class App extends Component {
       <ul>
         {hits.map(hit =>
           <li key={hit.objectID}>
-            <a href={hit.url}>{hit.title}</a>
+            <a href={hit.url}>{hit.title}
+             <strong>Author: {hit.author}</strong>
+            <p key={hit.objectID}>Created: {hit.created_at}</p>
+            </a>
           </li>  
         )}
       </ul>

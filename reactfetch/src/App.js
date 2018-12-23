@@ -25,7 +25,7 @@ class App extends Component {
   
     return (
       <ul>
-        <h1>List</h1>
+        <h1>List of news</h1>
         {hits.map(hit =>
           <li key={hit.objectID}>
             <a href={hit.url}>{hit.title}
